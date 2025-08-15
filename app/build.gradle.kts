@@ -56,4 +56,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(platform(libs.androidx.compose.bom.v20250800))
+    implementation(libs.coil.compose)
+    implementation(platform(libs.androidx.compose.bom.v20250800))
 }

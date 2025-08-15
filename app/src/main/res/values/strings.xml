@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">CookieParty</string>
+    <string name="placeholder_player">PlayerPlaceholder</string>
 </resources>
