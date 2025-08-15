@@ -15,6 +15,7 @@ import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ThumbUp
+import androidx.compose.material3.Button
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -90,8 +91,33 @@ private fun ScreenContent(paddingValues: PaddingValues, navController: NavContro
                 style = typography.headlineMedium
             )
         }
-        Row{
-            PlayerCard()
+
+        PlayerCard()
+
+        Row {
+            Button(
+                modifier = Modifier
+                    .padding(8.dp),
+                onClick = {
+
+                }
+            ) {
+                Text(
+                    text = "Add player"
+                )
+            }
+
+            Button(
+                modifier = Modifier
+                    .padding(8.dp),
+                onClick = {
+
+                }
+            ) {
+                Text(
+                    text = "Delete player"
+                )
+            }
         }
     }
 }
